@@ -188,13 +188,13 @@ export function FieldNotesCarousel({ notes }: { notes: FieldNote[] }) {
         </button>
       </div>
 
-      <div className="hidden items-center gap-4 sm:grid sm:grid-cols-[3rem_minmax(0,1fr)_3rem] lg:grid-cols-[3.5rem_minmax(0,1fr)_3.5rem]">
+      <div className="relative hidden sm:block">
         <button
           type="button"
           aria-label="Show previous field notes"
           onClick={() => scrollDesktopCards("previous")}
           disabled={!desktopScrollState.canScrollLeft}
-          className="inline-flex h-12 w-12 items-center justify-center justify-self-center border border-paper/18 bg-paper/[0.08] text-paper shadow-[0_16px_40px_rgba(0,0,0,0.18)] transition hover:border-marigold hover:bg-marigold hover:text-ink disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:border-paper/18 disabled:hover:bg-paper/[0.08] disabled:hover:text-paper"
+          className="absolute left-3 top-1/2 z-10 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center border border-paper/20 bg-ink/78 text-paper shadow-[0_16px_40px_rgba(0,0,0,0.22)] backdrop-blur transition hover:border-marigold hover:bg-marigold hover:text-ink disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:border-paper/20 disabled:hover:bg-ink/78 disabled:hover:text-paper lg:left-4"
         >
           <ChevronLeft size={22} />
         </button>
@@ -221,7 +221,7 @@ export function FieldNotesCarousel({ notes }: { notes: FieldNote[] }) {
           aria-label="Show next field notes"
           onClick={() => scrollDesktopCards("next")}
           disabled={!desktopScrollState.canScrollRight}
-          className="inline-flex h-12 w-12 items-center justify-center justify-self-center border border-paper/18 bg-paper/[0.08] text-paper shadow-[0_16px_40px_rgba(0,0,0,0.18)] transition hover:border-marigold hover:bg-marigold hover:text-ink disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:border-paper/18 disabled:hover:bg-paper/[0.08] disabled:hover:text-paper"
+          className="absolute right-3 top-1/2 z-10 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center border border-paper/20 bg-ink/78 text-paper shadow-[0_16px_40px_rgba(0,0,0,0.22)] backdrop-blur transition hover:border-marigold hover:bg-marigold hover:text-ink disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:border-paper/20 disabled:hover:bg-ink/78 disabled:hover:text-paper lg:right-4"
         >
           <ChevronRight size={22} />
         </button>
