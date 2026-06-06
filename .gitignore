@@ -1,0 +1,50 @@
+.env.local
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.log
+*.err
+
+# Local agent/tooling files.
+.claude/
+.mcp.json
+skills-lock.json
+
+# Generated reports and screenshots.
+media-usage-report.md
+test-results/
+
+# Raw scrape data used to generate the final site content.
+data/raw/
+
+# Local-only notes and helper scripts.
+info.md
+scripts/
+
+# Keep the deployed media folder as an allowlist. Add new files here only
+# when they are referenced by app/components/data source files.
+public/photos/*
+public/videos/*
+!public/photos/01-profile.jpg
+!public/photos/02-display.jpg
+!public/photos/04-display.jpg
+!public/photos/08-display.jpg
+!public/photos/12-display.jpg
+!public/photos/14-display.jpg
+!public/photos/18-display.jpg
+!public/photos/22-display.jpg
+!public/photos/24-display.jpg
+!public/photos/28-display.jpg
+!public/photos/38-display.jpg
+!public/photos/44-display.jpg
+!public/photos/54-display.jpg
+!public/photos/56-display.jpg
+!public/photos/60-display.jpg
+!public/videos/05-video.mp4
+!public/videos/09-video.mp4
+!public/videos/13-video.mp4
+!public/videos/23-video.mp4
+!public/videos/29-video.mp4
+!public/videos/61-video.mp4
